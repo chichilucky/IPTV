@@ -6,7 +6,11 @@ import json
 import re
 
 liaoning = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0i6L695a6BIg%3D%3D"    #辽宁
+liaoningg = "https://fofa.info/result?qbase64=ImlzU2hvd0xvZ2luSnMiICYmIHJlZ2lvbj0ibGlhb25pbmci"    #辽宁二
+liaoninggg = "https://fofa.info/result?qbase64=IlpIR1hUViIgJiYgcmVnaW9uPSJMaWFvbmluZyI%3D"    #辽宁三
 zhejiang = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0i5rWZ5rGfIg%3D%3D"    #浙江
+zhejiangg = "https://fofa.info/result?qbase64=ImlzU2hvd0xvZ2luSnMiICYmIHJlZ2lvbj0iWmhlamlhbmci"    #浙江二
+zhejianggg = "https://fofa.info/result?qbase64=IlpIR1hUViIgJiYgcmVnaW9uPSJ6aGVqaWFuZyI%3D"    #浙江三
 
 def process_url(url):
     # 创建一个Chrome WebDriver实例
@@ -100,6 +104,18 @@ def save_results(results, filename):
 results_liaoning = process_url(liaoning)
 save_results(results_liaoning, "liaoning.txt")
 
+results_liaoningg = process_url(liaoningg)
+save_results(results_liaoningg, "liaoningg.txt")
+
+results_liaoninggg = process_url(liaoninggg)
+save_results(results_liaoninggg, "liaoninggg.txt")
+
 results_zhejiang = process_url(zhejiang)
 save_results(results_zhejiang, "zhejiang.txt")
+
+results_zhejiangg = process_url(zhejiangg)
+save_results(results_zhejiangg, "zhejiangg.txt")
+
+results_zhejianggg = process_url(zhejianggg)
+save_results(results_zhejianggg, "zhejianggg.txt")
 
