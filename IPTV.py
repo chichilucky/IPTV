@@ -5,8 +5,8 @@ import requests
 import json
 import re
 
-shaanxi = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0i6L695a6BIg%3D%3D"    #陕西
-hunan = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0i5rWZ5rGfIg%3D%3D"    #湖南
+liaoning = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0i6L695a6BIg%3D%3D"    #辽宁
+zhejaing = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0i5rWZ5rGfIg%3D%3D"    #浙江
 
 def process_url(url):
     # 创建一个Chrome WebDriver实例
@@ -97,9 +97,9 @@ def save_results(results, filename):
             file.write(result + "\n")
             print(result)
 
-results_shaanxi = process_url(shaanxi)
-save_results(results_shaanxi, "shaanxi.txt")
+results_liaoning = process_url(liaoning)
+save_results(results_liaoning, "liaoning.txt")
 
-results_hunan = process_url(hunan)
-save_results(results_hunan, "hunan.txt")
+results_zhejiang = process_url(zhejiang)
+save_results(results_zhejiang, "zhejiang.txt")
 
