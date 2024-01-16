@@ -7,10 +7,12 @@ import re
 
 liaoning = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0i6L695a6BIg%3D%3D"    #辽宁
 liaoningg = "https://fofa.info/result?qbase64=ImlzU2hvd0xvZ2luSnMiICYmIHJlZ2lvbj0ibGlhb25pbmci"    #辽宁二
-liaoninggg = "https://fofa.info/result?qbase64=IlpIR1hUViIgJiYgcmVnaW9uPSJMaWFvbmluZyI%3D"    #辽宁三
+liaoninggg = "https://www.zoomeye.org/searchResult?q=ZHGXTV%20%2Bsubdivisions%3A%22%E8%BE%BD%E5%AE%81%22"    #辽宁三
+zoliaoning = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0i6L695a6BIg%3D%3D"    #zo辽宁
 zhejiang = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0i5rWZ5rGfIg%3D%3D"    #浙江
-zhejiangg = "https://fofa.info/result?qbase64=ImlzU2hvd0xvZ2luSnMiICYmIHJlZ2lvbj0iWmhlamlhbmci"    #浙江二
-zhejianggg = "https://fofa.info/result?qbase64=IlpIR1hUViIgJiYgcmVnaW9uPSJ6aGVqaWFuZyI%3D"    #浙江三
+zhejiangg = "https://www.zoomeye.org/searchResult?q=isShowLoginJs%20%2Bsubdivisions%3A%22%E6%B5%99%E6%B1%9F%22"    #浙江二
+zhejianggg = "https://www.zoomeye.org/searchResult?q=ZHGXTV%20%2Bsubdivisions%3A%22%E6%B5%99%E6%B1%9F%22"    #浙江三
+zozhejiang = "https://www.zoomeye.org/searchResult?q=iptv%2Flive%2Fzh_cn.js%20%2Bsubdivisions%3A%22%E6%B5%99%E6%B1%9F%22"    #zo浙江 
 
 def process_url(url):
     # 创建一个Chrome WebDriver实例
@@ -110,6 +112,9 @@ save_results(results_liaoningg, "liaoningg.txt")
 results_liaoninggg = process_url(liaoninggg)
 save_results(results_liaoninggg, "liaoninggg.txt")
 
+results_zoliaoning = process_url(zoliaoning)
+save_results(results_zoliaoning, "zoliaoning.txt")
+
 results_zhejiang = process_url(zhejiang)
 save_results(results_zhejiang, "zhejiang.txt")
 
@@ -118,4 +123,7 @@ save_results(results_zhejiangg, "zhejiangg.txt")
 
 results_zhejianggg = process_url(zhejianggg)
 save_results(results_zhejianggg, "zhejianggg.txt")
+
+results_zozhejiang = process_url(zozhejiang)
+save_results(results_zozhejiang, "zozhejiang.txt")
 
