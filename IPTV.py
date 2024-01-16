@@ -6,7 +6,7 @@ import json
 import re
 
 liaoning = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0i6L695a6BIg%3D%3D"    #辽宁
-zhejaing = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0i5rWZ5rGfIg%3D%3D"    #浙江
+zhejiang = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0i5rWZ5rGfIg%3D%3D"    #浙江
 
 def process_url(url):
     # 创建一个Chrome WebDriver实例
